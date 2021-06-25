@@ -13,6 +13,15 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+        env:
+        SECRET_KEY: 2)5ryjfva%8&29j78el7nk@0t7^b072)age8w6hrh!282_damq
+        EMAIL_FROM_USER: parisaalyari30@gmail.com
+        EMAIL_HOST_USER: parisaalyari30@gmail.com
+        EMAIL_HOST_PASSWORD: Parisa@3917
+
+
+
+
 
     steps:
     - uses: actions/checkout@v2
