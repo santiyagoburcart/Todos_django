@@ -40,7 +40,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Test with runserver
+    - name: Test with Unittest
       env: 
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
         EMAIL_FROM_USER: ${{ secrets.EMAIL_FROM_USER }}
@@ -54,4 +54,4 @@ jobs:
         DB_ENGINE: ${{ secrets.DB_ENGINE }}
           
       run: |
-        python manage.py runserver
+        python manage.py test
