@@ -57,7 +57,7 @@ class TestViews(TestSetup):
         self.client.post(reverse("register"), self.user)
         response = self.client.post(reverse("register"), self.test_user2)
         self.assertEquals(response.status_code, 409)
-    # TODO: fix bug 
+    # TODO: fix bug next time leter 
     #def test_should_login_successfully(self):
         #user = self.create_test_user()
         #response = self.client.post(reverse("login"), {
